@@ -1,0 +1,249 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.blue {
+  color: rgb(79, 120, 255);
+}
+/********************HEADER_START**********************/
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  margin: 0px;
+  color: white;
+}
+@media screen and (max-width: 550px) {
+  header {
+    height: 350px;
+  }
+}
+.logoHeader {
+  width: 120px;
+}
+
+.containerHeader {
+  display: flex;
+  width: 900px;
+  margin-bottom: 30px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -2px 2px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -3px 3px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .containerHeader {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1 {
+    width: 349px;
+    text-align: center;
+  }
+}
+
+.containerTitel {
+  display: flex;
+  justify-content: center;
+  width: 549px;
+}
+@media screen and (max-width: 500px) {
+  .containerTitel {
+    width: 400px;
+  }
+}
+.titelHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 50px;
+  margin: 10px;
+  background: -webkit-linear-gradient(
+    rgb(0, 0, 0),
+    rgb(133, 133, 133),
+    rgb(0, 0, 0)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 500px) {
+  header h1 {
+    width: 280px;
+    text-align: center;
+  }
+}
+
+header h2 {
+  margin: 0px;
+  background: -webkit-linear-gradient(rgb(10, 10, 10), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header img {
+  width: 150px;
+}
+.containerMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.containerBox {
+  width: 1079px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/********************HEADER_END**********************/
+
+/***********************BOX_START*********************/
+
+.containerBorder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.border {
+  width: 250px;
+  height: 5px;
+  border-top: solid black 2px;
+}
+.iconTexte {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.iconTexte img {
+  margin-left: 30px;
+}
+.logoRotate {
+  width: 25px;
+  height: 25px;
+  -webkit-animation: heartbeat 5s ease-in-out infinite both;
+  animation: heartbeat 5s ease-in-out infinite both;
+}
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.box {
+  height: 442px;
+  width: 395px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -2px 2px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -3px 3px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  filter: blur(2px);
+}
+
+.box:hover {
+  animation: boxFlou 2s ease 0s 1 normal none;
+  filter: blur(0px);
+}
+@keyframes boxFlou {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box h3 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.box p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+/***********************BOX_END********************/
